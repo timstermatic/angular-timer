@@ -1,0 +1,9 @@
+{
+    "name": "timer",
+    "version": "1.0.0",
+    "description": "Optional node server for timer written in angular.js",
+    "dependencies": {
+        "connect": "latest",
+        "serve-static": "latest"
+    }
+}

@@ -1,0 +1,20 @@
+<h2>Projects</h2>
+
+<div class="alert alert-info" ng-show="!projects.length">You don't have any projects yet</div>
+<hr>
+
+<div class="row">
+    <div class="col-md-9"><input type="text" ng-model="projectName" placeholder="Project Title" class="form-control"></div>
+    <div class="col-md-3"><button class="btn btn-default" ng-click="addProject(projectName)">+ Add</button></div>
+</div>
+<hr>
+<div class="list-group">
+    <span ng-repeat="project in projects track by $index" class="list-group-item">
+        <a href="#/tasks/{{project.uuid}}">{{project.name}}</a> 
+        <span class="pull-right">
+            <a href="" ng-click="deleteProject($index)"><i class="glyphicon glyphicon-trash"></i></a>
+        </span>
+    </span>
+</div>
+
+
